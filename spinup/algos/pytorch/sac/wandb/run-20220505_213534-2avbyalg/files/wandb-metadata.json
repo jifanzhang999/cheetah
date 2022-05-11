@@ -1,0 +1,16 @@
+{
+    "os": "Darwin-18.7.0-x86_64-i386-64bit",
+    "python": "3.7.8",
+    "heartbeatAt": "2022-05-06T02:35:36.885138",
+    "startedAt": "2022-05-06T02:35:34.508008",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py",
+    "codePath": "sac.py",
+    "host": "Zhangs-MacBook-Pro.local",
+    "username": "zhangjessie",
+    "executable": "/Users/zhangjessie/PycharmProjects/py3.7/venv/bin/python"
+}

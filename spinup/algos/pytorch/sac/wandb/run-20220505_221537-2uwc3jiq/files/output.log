@@ -1,0 +1,292 @@
+/Users/zhangjessie/PycharmProjects/py3.7/venv/lib/python3.7/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment HalfCheetah-v2 is out of date. You should consider upgrading to version `v4` with the environment ID `HalfCheetah-v4`.
+  f"The environment {path} is out of date. You should consider "
+Warning: Log dir /Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0 already exists! Storing info there anyway.
+[32mLogging data to /Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0/progress.txt
+[36mSaving config:
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            256,
+            256
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "alpha":	0.2,
+    "batch_size":	100,
+    "env_fn":	"<function <lambda> at 0x16be0eb90>",
+    "epochs":	5,
+    "exp_name":	"sac",
+    "gamma":	0.99,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x16be5cb10>":	{
+            "epoch_dict":	{},
+            "exp_name":	"sac",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"sac",
+        "output_dir":	"/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0"
+    },
+    "lr":	0.001,
+    "max_ep_len":	1000,
+    "num_test_episodes":	10,
+    "polyak":	0.995,
+    "replay_size":	1000000,
+    "save_freq":	1,
+    "seed":	0,
+    "start_steps":	10000,
+    "steps_per_epoch":	4000,
+    "update_after":	1000,
+    "update_every":	50
+}
+[32mNumber of parameters: 	 pi: 73484, 	 q1: 72193, 	 q2: 72193
+---------------------------------------
+|             Epoch |               1 |
+|      AverageEpRet |            -259 |
+|          StdEpRet |            81.1 |
+|          MaxEpRet |            -201 |
+|          MinEpRet |            -397 |
+|  AverageTestEpRet |             -54 |
+|      StdTestEpRet |            10.2 |
+|      MaxTestEpRet |           -30.4 |
+|      MinTestEpRet |           -62.8 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |           4e+03 |
+|     AverageQ1Vals |            4.15 |
+|         StdQ1Vals |             3.1 |
+|         MaxQ1Vals |            21.6 |
+|         MinQ1Vals |            -3.1 |
+|     AverageQ2Vals |            4.15 |
+|         StdQ2Vals |             3.1 |
+|         MaxQ2Vals |            21.8 |
+|         MinQ2Vals |            -3.1 |
+|      AverageLogPi |           -3.01 |
+|          StdLogPi |             1.6 |
+|          MaxLogPi |            8.54 |
+|          MinLogPi |           -12.6 |
+|            LossPi |           -5.07 |
+|             LossQ |           0.771 |
+|              Time |              33 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               2 |
+|      AverageEpRet |            -250 |
+|          StdEpRet |            32.7 |
+|          MaxEpRet |            -199 |
+|          MinEpRet |            -286 |
+|  AverageTestEpRet |            -195 |
+|      StdTestEpRet |            23.2 |
+|      MaxTestEpRet |            -175 |
+|      MinTestEpRet |            -245 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |           8e+03 |
+|     AverageQ1Vals |            15.4 |
+|         StdQ1Vals |            6.56 |
+|         MaxQ1Vals |              58 |
+|         MinQ1Vals |           -2.77 |
+|     AverageQ2Vals |            15.4 |
+|         StdQ2Vals |            6.55 |
+|         MaxQ2Vals |            57.9 |
+|         MinQ2Vals |           -2.69 |
+|      AverageLogPi |           -1.59 |
+|          StdLogPi |            2.68 |
+|          MaxLogPi |            15.6 |
+|          MinLogPi |           -14.3 |
+|            LossPi |           -16.6 |
+|             LossQ |            2.07 |
+|              Time |            79.3 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               3 |
+|      AverageEpRet |            -217 |
+|          StdEpRet |            63.8 |
+|          MaxEpRet |            -131 |
+|          MinEpRet |            -279 |
+|  AverageTestEpRet |            81.2 |
+|      StdTestEpRet |            77.2 |
+|      MaxTestEpRet |             222 |
+|      MinTestEpRet |            7.19 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |         1.2e+04 |
+|     AverageQ1Vals |            31.8 |
+|         StdQ1Vals |            9.62 |
+|         MaxQ1Vals |            76.6 |
+|         MinQ1Vals |            11.3 |
+|     AverageQ2Vals |            31.8 |
+|         StdQ2Vals |            9.63 |
+|         MaxQ2Vals |            76.4 |
+|         MinQ2Vals |            10.7 |
+|      AverageLogPi |          -0.986 |
+|          StdLogPi |            2.99 |
+|          MaxLogPi |              20 |
+|          MinLogPi |           -12.9 |
+|            LossPi |             -33 |
+|             LossQ |            3.92 |
+|              Time |             120 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               4 |
+|      AverageEpRet |             439 |
+|          StdEpRet |             311 |
+|          MaxEpRet |             800 |
+|          MinEpRet |             117 |
+|  AverageTestEpRet |             624 |
+|      StdTestEpRet |             315 |
+|      MaxTestEpRet |        1.38e+03 |
+|      MinTestEpRet |             247 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |         1.6e+04 |
+|     AverageQ1Vals |            37.6 |
+|         StdQ1Vals |            11.3 |
+|         MaxQ1Vals |            79.3 |
+|         MinQ1Vals |            15.4 |
+|     AverageQ2Vals |            37.6 |
+|         StdQ2Vals |            11.3 |
+|         MaxQ2Vals |            80.1 |
+|         MinQ2Vals |            14.9 |
+|      AverageLogPi |           -2.31 |
+|          StdLogPi |            2.16 |
+|          MaxLogPi |            18.3 |
+|          MinLogPi |           -13.6 |
+|            LossPi |           -38.3 |
+|             LossQ |            3.58 |
+|              Time |             161 |
+---------------------------------------
+/Users/zhangjessie/PycharmProjects/py3.7/venv/lib/python3.7/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment HalfCheetah-v2 is out of date. You should consider upgrading to version `v4` with the environment ID `HalfCheetah-v4`.
+  f"The environment {path} is out of date. You should consider "
+---------------------------------------
+|             Epoch |               5 |
+|      AverageEpRet |             175 |
+|          StdEpRet |            97.8 |
+|          MaxEpRet |             282 |
+|          MinEpRet |            20.4 |
+|  AverageTestEpRet |        1.66e+03 |
+|      StdTestEpRet |            27.1 |
+|      MaxTestEpRet |        1.72e+03 |
+|      MinTestEpRet |        1.63e+03 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |           2e+04 |
+|     AverageQ1Vals |            41.6 |
+|         StdQ1Vals |            13.7 |
+|         MaxQ1Vals |            83.4 |
+|         MinQ1Vals |            17.7 |
+|     AverageQ2Vals |            41.6 |
+|         StdQ2Vals |            13.7 |
+|         MaxQ2Vals |            83.8 |
+|         MinQ2Vals |            18.2 |
+|      AverageLogPi |           -2.36 |
+|          StdLogPi |            2.14 |
+|          MaxLogPi |            17.5 |
+|          MinLogPi |           -14.1 |
+|            LossPi |           -42.2 |
+|             LossQ |            3.28 |
+|              Time |             202 |
+---------------------------------------
+Warning: Log dir /Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0 already exists! Storing info there anyway.
+[32mLogging data to /Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0/progress.txt
+[36mSaving config:
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            256,
+            256
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "alpha":	0.2,
+    "batch_size":	100,
+    "env_fn":	"<function <lambda> at 0x17859b3b0>",
+    "epochs":	5,
+    "exp_name":	"sac",
+    "gamma":	0.99,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x17859afd0>":	{
+            "epoch_dict":	{},
+            "exp_name":	"sac",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"sac",
+        "output_dir":	"/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0"
+    },
+    "lr":	0.001,
+    "max_ep_len":	1000,
+    "num_test_episodes":	10,
+    "polyak":	0.995,
+    "replay_size":	1000000,
+    "save_freq":	1,
+    "seed":	0,
+    "start_steps":	10000,
+    "steps_per_epoch":	4000,
+    "update_after":	1000,
+    "update_every":	50
+}
+[32mNumber of parameters: 	 pi: 73484, 	 q1: 72193, 	 q2: 72193
+---------------------------------------
+|             Epoch |               1 |
+|      AverageEpRet |            -272 |
+|          StdEpRet |            61.1 |
+|          MaxEpRet |            -210 |
+|          MinEpRet |            -348 |
+|  AverageTestEpRet |            -158 |
+|      StdTestEpRet |            27.3 |
+|      MaxTestEpRet |            -127 |
+|      MinTestEpRet |            -199 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |           4e+03 |
+|     AverageQ1Vals |            3.99 |
+|         StdQ1Vals |            2.58 |
+|         MaxQ1Vals |            17.1 |
+|         MinQ1Vals |           -1.88 |
+|     AverageQ2Vals |            3.99 |
+|         StdQ2Vals |            2.57 |
+|         MaxQ2Vals |            17.3 |
+|         MinQ2Vals |           -2.03 |
+|      AverageLogPi |           -3.42 |
+|          StdLogPi |            1.29 |
+|          MaxLogPi |            14.5 |
+|          MinLogPi |           -11.5 |
+|            LossPi |           -4.82 |
+|             LossQ |           0.526 |
+|              Time |            33.4 |
+---------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py", line 376, in <module>
+    logger_kwargs=logger_kwargs)
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py", line 338, in sac
+    test_agent()
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py", line 277, in test_agent
+    o, r, d, _ = test_env.step(get_action(o, True))
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py", line 270, in get_action
+    deterministic)
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/core.py", line 97, in act
+    a, _ = self.pi(obs, deterministic, False)
+  File "/Users/zhangjessie/PycharmProjects/py3.7/venv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/core.py", line 42, in forward
+    log_std = torch.clamp(log_std, LOG_STD_MIN, LOG_STD_MAX)
+KeyboardInterrupt

@@ -1,0 +1,121 @@
+Warning: Log dir /Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0 already exists! Storing info there anyway.
+[32mLogging data to /Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0/progress.txt
+[36mSaving config:
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            256,
+            256
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "alpha":	0.2,
+    "batch_size":	100,
+    "env_fn":	"<function <lambda> at 0x17114acb0>",
+    "epochs":	5,
+    "exp_name":	"sac",
+    "gamma":	0.99,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x17119ec90>":	{
+            "epoch_dict":	{},
+            "exp_name":	"sac",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"sac",
+        "output_dir":	"/Users/zhangjessie/PycharmProjects/py3.7/data/sac/sac_s0"
+    },
+    "lr":	0.001,
+    "max_ep_len":	1000,
+    "num_test_episodes":	10,
+    "polyak":	0.995,
+    "replay_size":	1000000,
+    "save_freq":	1,
+    "seed":	0,
+    "start_steps":	10000,
+    "steps_per_epoch":	4000,
+    "update_after":	1000,
+    "update_every":	50
+}
+[32mNumber of parameters: 	 pi: 73484, 	 q1: 72193, 	 q2: 72193
+/Users/zhangjessie/PycharmProjects/py3.7/venv/lib/python3.7/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment HalfCheetah-v2 is out of date. You should consider upgrading to version `v4` with the environment ID `HalfCheetah-v4`.
+  f"The environment {path} is out of date. You should consider "
+---------------------------------------
+|             Epoch |               1 |
+|      AverageEpRet |            -341 |
+|          StdEpRet |            76.4 |
+|          MaxEpRet |            -248 |
+|          MinEpRet |            -422 |
+|  AverageTestEpRet |            -131 |
+|      StdTestEpRet |              16 |
+|      MaxTestEpRet |            -103 |
+|      MinTestEpRet |            -159 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |           4e+03 |
+|     AverageQ1Vals |            3.79 |
+|         StdQ1Vals |            3.24 |
+|         MaxQ1Vals |            20.2 |
+|         MinQ1Vals |           -7.51 |
+|     AverageQ2Vals |            3.79 |
+|         StdQ2Vals |            3.24 |
+|         MaxQ2Vals |            19.4 |
+|         MinQ2Vals |           -8.22 |
+|      AverageLogPi |           -2.83 |
+|          StdLogPi |            1.73 |
+|          MaxLogPi |            12.7 |
+|          MinLogPi |           -12.4 |
+|            LossPi |           -4.78 |
+|             LossQ |           0.904 |
+|              Time |              34 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               2 |
+|      AverageEpRet |            -226 |
+|          StdEpRet |            20.9 |
+|          MaxEpRet |            -198 |
+|          MinEpRet |            -256 |
+|  AverageTestEpRet |            69.6 |
+|      StdTestEpRet |            27.9 |
+|      MaxTestEpRet |             105 |
+|      MinTestEpRet |            15.1 |
+|             EpLen |           1e+03 |
+|         TestEpLen |           1e+03 |
+| TotalEnvInteracts |           8e+03 |
+|     AverageQ1Vals |            15.9 |
+|         StdQ1Vals |            7.25 |
+|         MaxQ1Vals |            46.1 |
+|         MinQ1Vals |           -7.16 |
+|     AverageQ2Vals |            15.9 |
+|         StdQ2Vals |            7.25 |
+|         MaxQ2Vals |              45 |
+|         MinQ2Vals |           -7.57 |
+|      AverageLogPi |           -1.26 |
+|          StdLogPi |            2.79 |
+|          MaxLogPi |            17.9 |
+|          MinLogPi |           -14.4 |
+|            LossPi |           -17.3 |
+|             LossQ |            1.93 |
+|              Time |            88.7 |
+---------------------------------------
+Traceback (most recent call last):
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py", line 376, in <module>
+    logger_kwargs=logger_kwargs)
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py", line 327, in sac
+    update(data=batch)
+  File "/Users/zhangjessie/PycharmProjects/py3.7/spinup/algos/pytorch/sac/sac.py", line 249, in update
+    loss_pi.backward()
+  File "/Users/zhangjessie/PycharmProjects/py3.7/venv/lib/python3.7/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/Users/zhangjessie/PycharmProjects/py3.7/venv/lib/python3.7/site-packages/torch/autograd/__init__.py", line 175, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
